@@ -25,7 +25,7 @@ defmodule Support.User do
     |> cast(params, @required_fields, @optional_fields)
     |> update_change(:email, &String.downcase/1)
     |> validate_format(:email, ~r/@/)
-    |> validate_confirmation(:password, "must match password")
+    |> validate_confirmation(:password, message: "must match password")
     |> unique_constraint(:email)
     |> encrypt_password()
   end
