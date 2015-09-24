@@ -18,3 +18,12 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
 # strangeloop2015_taking_off_with_pheonix
+
+
+
+#### What i did:
+ - mix help | grep phoenix
+ - mix phoenix.routes
+page_path  GET  /  Support.PageController :index
+
+ - mix phoenix.gen.model User users name email encrypted_password
